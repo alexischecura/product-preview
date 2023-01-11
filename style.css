@@ -118,7 +118,7 @@ body {
   background-color: var(--btn-active);
   transform: scale(0.95);
 }
-.fa-shopping-cart{
+.shopping-cart{
   font-size: 12px;
 }
 footer{
@@ -146,6 +146,9 @@ footer{
 @media only screen and (max-width: 300px) {
   .card-product {
     padding: 14px;
+  }
+  footer{
+    display: none;
   }
 }
 
