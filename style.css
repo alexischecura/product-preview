@@ -1,0 +1,132 @@
+:root {
+  --first-color: hsl(158, 36%, 37%);
+  --second-color: hsl(228, 12%, 48%);
+  --third-color: hsl(212, 21%, 14%);
+  --bg-color: hsl(30, 38%, 92%);
+  --bg-card-color: hsl(0, 0%, 100%);
+  --btn-active: #1a4031;
+
+  --border-radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-container {
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  background-color: var(--bg-card-color);
+  display: flex;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.image-mobile{
+  display: none;
+}
+
+.image-desktop {
+  height: 450px;
+  width: auto;
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.card-title {
+  color: var(--second-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.card-name {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--third-color);
+}
+
+.card-info {
+  color: var(--second-color);
+  line-height: 1.6;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.actual-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--first-color);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--second-color);
+}
+.btn {
+  transition: 0.2s ease;
+}
+
+.btn:link,
+.btn:visited {
+  color: var(--bg-card-color);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: var(--first-color);
+  padding: 14px;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  background-color: var(--btn-active);
+}
+.btn:active {
+  background-color: var(--btn-active);
+  transform: scale(0.95);
+}
+
+@media only screen and (max-width: 500px){ 
+  .image-desktop{
+    display: none;
+  }
+
+  .image-mobile{
+    display: block;
+  }
+}
+
+/* Atribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
