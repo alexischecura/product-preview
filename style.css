@@ -121,7 +121,11 @@ footer {
   bottom: 10px;
 }
 
-@media only screen and (max-width: 619.9px) {
+@media only screen and (max-width: 619.98px) {
+  
+  img {
+    width: 100%;
+  }
   .card-container {
     flex-direction: column;
     width: 90vw;
@@ -132,9 +136,6 @@ footer {
   .card-product {
     padding: 20px;
     min-height: 330px;
-  }
-  img {
-    width: 100%;
   }
 }
 
