@@ -143,6 +143,7 @@ footer{
   }
   .card-product {
     padding: 20px;
+    min-height: 330px;
   }
 }
 
