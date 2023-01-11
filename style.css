@@ -141,11 +141,14 @@ footer{
     width: 90vw;
     min-height: 600px;
   }
+  .card-product {
+    padding: 20px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
   .card-product {
-    padding: 14px;
+    padding: 13px;
   }
   footer{
     display: none;
